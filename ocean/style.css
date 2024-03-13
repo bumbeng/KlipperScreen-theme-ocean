@@ -1,0 +1,262 @@
+/* blurry-theme created by Sascha Buerger 2023 */
+@define-color color1 #1b85b8;
+@define-color color2 #ffb3ba;
+@define-color color3 #baffc9;
+@define-color color4 #ffdfba;
+@define-color bg #002b36;
+@define-color warning #f9a825;
+@define-color error #981E1F;
+@define-color text white;
+
+* {
+    background-color: transparent;
+
+}
+
+list row {
+    background-color: rgba(56, 90, 120, 0.4);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    
+}
+
+treeview.view {
+    background-color: rgba(56, 90, 120, 0.4);
+
+}
+
+window {
+    background-color: @bg;
+    background-image: url("./styles/ocean/background.png");
+    background-size: cover;
+
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0.5em;
+}
+
+button:active,
+.button_active,
+button.active {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-radius: 0.5em;
+    border-style: none;
+    margin: 10px;
+}
+
+button.color1 {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-bottom-color: @color1;
+    border-radius: 1em;
+}
+
+button.color2 {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-bottom-color: @color2;
+    border-radius: 1em;
+}
+
+button.color3 {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-bottom-color: @color3;
+    border-radius: 1em;
+}
+
+button.color4 {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-bottom-color: @color4;
+    border-radius: 1em;
+}
+
+button.update {
+    background-color: rgba(31, 57, 77, 0.8);
+    border: 0;
+    border-bottom: .3em solid;
+    border-bottom-color: @color4;
+    border-radius: .75em;
+}
+
+button.invalid {
+    background-color: rgba(31, 57, 77, 0.8);
+    border: 0;
+    border-bottom: .3em solid;
+    border-bottom-color: @error;
+    border-radius: .75em;
+}
+
+combobox button,
+combobox box button {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-color: transparent;
+    border: 0;
+    border-radius: 0.75em;
+}
+
+menu,
+popover,
+popover button,
+combobox arrow,
+menuitem,
+combobox menuitem {
+    background-color: transparent;
+    
+}
+
+combobox window.popup {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+treeview.view check,
+switch {
+    background-color: rgba(31, 57, 77, 0.8);
+}
+
+treeview.view check:checked,
+switch:checked {
+    background-color: rgba(32, 100, 105, 1.0);
+}
+
+entry {
+    background-color: rgba(31, 57, 77, 0.8);
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+label {
+    color: @text;
+}
+
+menu {
+    background-color: rgba(31, 57, 77, 0.8); 
+    border: 0.2em solid;
+    border-color: @bg;
+}
+
+menuitem {
+    background-color: transparent;
+    border: none;
+    
+}
+
+trough {
+    background-color: rgba(31, 57, 77, 0.8);
+    color: @text;
+    border: none;
+    border-radius: 1em;
+}
+
+trough highlight,
+trough progress {
+    background-color: rgba(32, 100, 105, 0.65);
+    border: none;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    
+}
+trough progress.left {
+    border: 2px;
+}
+
+scrollbar, scrollbar button, scrollbar trough {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: rgba(217, 217, 217, 0.526);
+}
+
+textview .time {
+    color: @text;
+}
+
+.popup {
+    background-color: @color3;
+}
+
+.dialog {
+    border: @bg;
+    background-color: transparent;
+}
+
+.dialog button {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-bottom-color: @color3;
+    border-radius: .75em;
+}
+
+.dialog button:nth-child(1) {
+    border-bottom-color: @color4;
+}
+
+.dialog button:nth-child(2) {
+    border-bottom-color: @error;
+}
+
+.horizontal_togglebuttons {
+    border: none;
+    background-color: rgba(31, 57, 77, 0.6);
+    border-radius: 0.75em;
+    margin-right: 5px;
+}
+
+.horizontal_togglebuttons_active {
+    background-color: rgba(31, 57, 77, 0.9);
+}
+
+.message_popup button {
+    background-color: @error;
+}
+
+.message_popup_echo, .message_popup_echo button {
+    background-color: @color4;
+}
+
+.message_popup_warning, .message_popup_warning button {
+    background-color: @color1;
+}
+
+.message_popup_error, .message_popup_error button {
+    background-color: @error;
+}
+
+.numpad_tleft,
+.numpad_top,
+.numpad_tright,
+.numpad_left,
+.numpad_button,
+.numpad_right,
+.numpad_bleft,
+.numpad_bottom,
+.numpad_bright {
+    border-color: transparent;
+    background-color: rgba(31, 57, 77, 0.8);
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.message button {
+    color: @bg;
+}
+
+.warning {
+    background-color: @color1;
+}
+
+.keyboard_pad {
+    background-color: rgba(31, 57, 77, 0.8);
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+}
+.graph_label {
+    background-color: rgba(31, 57, 77, 0.8);
+    border-left-width: 4px; 
+    border-left-style: solid;
+    border-radius: 6px;
+}
